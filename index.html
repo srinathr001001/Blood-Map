@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script type="text/javascript" src="js/js.js"></script>
+    <link rel="shortcut icon" type="image/png" href="images/logopng.png">
+<body>
+
+
+    <div class="box">
+    <img src="images/avatar1.png" class="user">
+        <h1>Login Here</h1>
+
+        <form name="myform" method="POST" onsubmit="return vfun()" action="loginpage1.php">
+
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter Your Email" required="">
+
+            <p>Password</p>
+            <input type="password" name="upswd" placeholder="Enter Password" required="">
+
+             <div id="errorBox"></div>
+            <input type="submit" name="" value="Login">
+
+            <br><br>
+            <a href="register.html">Register for new account ?</a>
+
+        </form>
+        
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC5UwMwo04_x-QQAKH5AMOP-qXUs6KZsHE",
+          authDomain: "bm11-3ece8.firebaseapp.com",
+          projectId: "bm11-3ece8",
+          storageBucket: "bm11-3ece8.appspot.com",
+          messagingSenderId: "53301584348",
+          appId: "1:53301584348:web:3fa4edbbd48acc37e1ef19",
+          measurementId: "G-W37GTZTKYK"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
